@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./lovely-blue-vibrant-fluid-background-design_1017-32112.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+body h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: 12px 12px 15px rgb(11, 6, 6);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 400px;
+    width: 900px;
+    background-color: transparent;
+}
+.main-container{
+    width: 850px;
+    height: auto !important;
+    padding:  50px 0px;
+    background-color:transparent;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow:  2px 10px 10px 12px rgba(229, 220, 220);
+
+    
+}
+.form-group{
+    font-size: 1.8rem;
+}
+.form-group1{
+    font-size: 1.8rem;
+}
+#length {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    width: 25px;  
+    height: 25px; 
+    margin-right: 10px;
+    cursor: pointer;
+    transition:  0.3s;
+}
+#generate{
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #eef6ee;
+    color: rgb(16, 15, 15);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+   
+}
+.password-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    display: none;
+}
+.password-container input{
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    outline: none;
+    font-size: 1.8rem;
+}
+.password-container #copy{
+    background-color: #eef6ee;
+    color: rgb(16, 15, 15);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}

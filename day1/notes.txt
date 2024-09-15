@@ -1,0 +1,2 @@
+React -> Every thing is a js (logic  + html) .
+node js environment to run.
