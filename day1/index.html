@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- using cdn link we use react -->
+    <!-- using cdn link we use react -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-         <!-- copy from reactjs.com  -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- copy from reactjs.com  -->
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Welcome to react js</h1>
+    <div id="root"></div>
+
     <script>
-        
+        const element = React.createElement('h1', { className: 'greeting' }, 'Hello, World!');
+
+        const paragraph = React.createElement('p', null, 'This is a paragraph inside the  div.');
+
+        const div1 = React.createElement('div', { className: 'div1' }, paragraph);
+        const anc = React.createElement('a', { href: '#' }, 'This is an anchor tag inside paragraph2');
+        const paragraph2 = React.createElement('p', null, anc);
+
+        const div2 = React.createElement('div', { className: 'div2' },paragraph2);
+
+        const para3 = React.createElement('p', { className: 'para3' },"This is 3rd pera in side the div");
+        const div3 = React.createElement('div', { className: 'div3'},para3);
+
+        const rootElement = React.createElement('div', null, element, div1,div2,div3);
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(rootElement);
     </script>
-    
+
 </body>
+
 </html>
